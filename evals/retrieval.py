@@ -16,7 +16,7 @@ from pathlib import Path
 from assistant.search import Index
 
 SET = Path(__file__).with_name("retrieval_set.json")
-MODES = ["keyword", "vector", "hybrid"]
+MODES = ["keyword", "vector", "hybrid", "hybrid+brand"]
 
 
 def evaluate(index: Index, items: list[dict], mode: str) -> dict:
@@ -24,7 +24,7 @@ def evaluate(index: Index, items: list[dict], mode: str) -> dict:
     misses = []
     for item in items:
         hits = index.search(item["question"], limit=10, mode=mode)
-        keys = [index.db.execute("SELECT slug, section FROM chunks WHERE rowid = ?", (h.rowid,)).fetchone() for h in hits]
+        keys = [(hit.slug, hit.section) for hit in hits]
         target = (item["slug"], item["section"])
         rank = next((i for i, key in enumerate(keys, start=1) if key == target), None)
         hit1 += rank == 1
@@ -47,8 +47,8 @@ def main() -> None:
     for mode, r in results.items():
         print(f"{mode:<10}" + "".join(f"{r[m]:>10.2f}" for m in ["hit@1", "hit@5", "MRR", "бренд@5"]))
 
-    print("\nПромахи гибридного поиска (нужный раздел не в первых пяти):")
-    for item, top in results["hybrid"]["misses"]:
+    print(f"\nПромахи режима {MODES[-1]} (нужный раздел не в первых пяти):")
+    for item, top in results[MODES[-1]]["misses"]:
         found = ", ".join(f"{slug}/{section}" for slug, section in top)
         print(f"- [{item['slug']}/{item['section']}] {item['question']}\n    первые три: {found}")
 
