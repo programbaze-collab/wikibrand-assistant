@@ -1,0 +1,5 @@
+# Caddy получает сертификат Let's Encrypt сам. sslip.io — DNS, который отдаёт IP из имени,
+# поэтому HTTPS работает без своего домена.
+assistant.81-85-78-242.sslip.io {
+	reverse_proxy assistant:8000
+}

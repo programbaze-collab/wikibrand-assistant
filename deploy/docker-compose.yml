@@ -1,0 +1,19 @@
+# Ассистент на сервере: docker compose up -d
+# Рядом нужны: .env с DEEPSEEK_API_KEY и папка index/ (python -m assistant.index).
+# HTTPS и домен — внешний Caddy в общей сети web (см. Caddyfile).
+services:
+  assistant:
+    image: wikibrand-assistant
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./index:/data/index:ro
+    # Пик памяти с моделью эмбеддингов — 613 МБ. Ограничение не даёт ассистенту
+    # вытеснить соседние сервисы на сервере с 1 ГБ RAM.
+    mem_limit: 750m
+    networks:
+      - web
+
+networks:
+  web:
+    external: true
