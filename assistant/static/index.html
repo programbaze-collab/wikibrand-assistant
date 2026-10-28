@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ассистент WikiBrand</title>
+<style>
+  :root { --bg: #f6f7f9; --card: #fff; --text: #1d2330; --muted: #667085; --accent: #2f6fde; --line: #e3e6ec; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #14171c; --card: #1d2128; --text: #e7e9ee; --muted: #9aa3b2; --accent: #6b9cff; --line: #2c323c; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 120px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .lead { color: var(--muted); margin: 0 0 24px; }
+  .examples { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .examples button { border: 1px solid var(--line); background: var(--card); color: var(--text); border-radius: 16px; padding: 6px 12px; font: inherit; font-size: 14px; cursor: pointer; }
+  .msg { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; margin-bottom: 12px; white-space: pre-wrap; }
+  .msg.user { background: transparent; border-style: dashed; color: var(--muted); }
+  .msg.error { border-color: #d64545; }
+  .sources { margin: 10px 0 0; padding: 10px 0 0; border-top: 1px solid var(--line); font-size: 14px; list-style: none; white-space: normal; }
+  .sources li { margin: 2px 0; }
+  a { color: var(--accent); }
+  sup a { text-decoration: none; }
+  form { position: fixed; left: 0; right: 0; bottom: 0; background: var(--bg); border-top: 1px solid var(--line); padding: 12px 16px; }
+  .row { max-width: 760px; margin: 0 auto; display: flex; gap: 8px; }
+  input { flex: 1; min-width: 0; border: 1px solid var(--line); border-radius: 10px; padding: 12px; font: inherit; background: var(--card); color: var(--text); }
+  button[type=submit] { border: 0; border-radius: 10px; padding: 0 18px; font: inherit; background: var(--accent); color: #fff; cursor: pointer; }
+  button:disabled { opacity: .6; cursor: default; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Ассистент WikiBrand</h1>
+  <p class="lead">Отвечает на вопросы о брендах по статьям энциклопедии <a href="https://wiki-brand.com/ru" target="_blank" rel="noopener">wiki-brand.com</a> и даёт ссылки на источники.</p>
+  <div class="examples">
+    <button type="button">Как отличить подделку микрофона Boya?</button>
+    <button type="button">Какие бренды похожи на Benro?</button>
+    <button type="button">Где покупать наушники Soundcore?</button>
+    <button type="button">Чем отличается Honor от Realme?</button>
+  </div>
+  <div id="chat"></div>
+</main>
+<form id="form">
+  <div class="row">
+    <input id="question" placeholder="Спросите о бренде" maxlength="500" autocomplete="off" required>
+    <button type="submit">Спросить</button>
+  </div>
+</form>
+<script>
+const chat = document.getElementById("chat");
+const form = document.getElementById("form");
+const input = document.getElementById("question");
+const submit = form.querySelector("button");
+
+function escapeHtml(text) {
+  return text.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+}
+
+function addMessage(html, kind) {
+  const div = document.createElement("div");
+  div.className = "msg " + kind;
+  div.innerHTML = html;
+  chat.appendChild(div);
+  div.scrollIntoView({ behavior: "smooth", block: "end" });
+  return div;
+}
+
+// Номера [1], [2] в ответе становятся ссылками на страницы энциклопедии.
+function renderAnswer({ answer, sources }) {
+  const urls = Object.fromEntries(sources.map((s) => [s.number, s.url]));
+  const text = escapeHtml(answer).replace(/\[(\d+)\]/g, (m, n) =>
+    urls[n] ? `<sup><a href="${escapeHtml(urls[n])}" target="_blank" rel="noopener">[${n}]</a></sup>` : "");
+  const list = sources.map((s) =>
+    `<li>[${s.number}] <a href="${escapeHtml(s.url)}" target="_blank" rel="noopener">${escapeHtml(s.brand)} — ${escapeHtml(s.section)}</a></li>`).join("");
+  return text + (list ? `<ul class="sources">${list}</ul>` : "");
+}
+
+async function ask(question) {
+  addMessage(escapeHtml(question), "user");
+  const pending = addMessage("Ищу в энциклопедии…", "bot");
+  submit.disabled = true;
+  try {
+    const response = await fetch("/ask", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ question }),
+    });
+    const data = await response.json();
+    if (!response.ok) throw new Error(typeof data.detail === "string" ? data.detail : "Вопрос должен быть от 3 до 500 символов.");
+    pending.innerHTML = renderAnswer(data);
+  } catch (error) {
+    pending.className = "msg error";
+    pending.textContent = error.message || "Что-то пошло не так.";
+  } finally {
+    submit.disabled = false;
+    input.focus();
+  }
+}
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const question = input.value.trim();
+  if (question) { input.value = ""; ask(question); }
+});
+document.querySelectorAll(".examples button").forEach((button) =>
+  button.addEventListener("click", () => ask(button.textContent)));
+</script>
+</body>
+</html>
