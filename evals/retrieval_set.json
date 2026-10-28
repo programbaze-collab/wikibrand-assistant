@@ -1,0 +1,569 @@
+[
+ {
+  "question": "Какие бренды можно рассматривать вместо Blueendless?",
+  "chunk_id": "blueendless:alternatives:0",
+  "slug": "blueendless",
+  "brand": "Blueendless",
+  "section": "Аналоги"
+ },
+ {
+  "question": "Какие бренды роботов-пылесосов похожи на Dreame и чем они отличаются?",
+  "chunk_id": "dreame:alternatives:0",
+  "slug": "dreame",
+  "brand": "Dreame",
+  "section": "Аналоги"
+ },
+ {
+  "question": "Какие бренды могут заменить Moxom по качеству и цене?",
+  "chunk_id": "moxom:alternatives:0",
+  "slug": "moxom",
+  "brand": "Moxom",
+  "section": "Аналоги"
+ },
+ {
+  "question": "Какие бренды умных часов похожи на Lemfo и чем они отличаются?",
+  "chunk_id": "lemfo:alternatives:0",
+  "slug": "lemfo",
+  "brand": "Lemfo",
+  "section": "Аналоги"
+ },
+ {
+  "question": "Какие бренды аксессуаров для камер похожи на JJC по цене и качеству?",
+  "chunk_id": "jjc:alternatives:0",
+  "slug": "jjc",
+  "brand": "JJC",
+  "section": "Аналоги"
+ },
+ {
+  "question": "Какие бренды можно считать аналогами Datyson и чем они отличаются?",
+  "chunk_id": "datyson:alternatives:0",
+  "slug": "datyson",
+  "brand": "Datyson",
+  "section": "Аналоги"
+ },
+ {
+  "question": "Какие бренды штативов похожи на Benro и чем они отличаются?",
+  "chunk_id": "benro:alternatives:0",
+  "slug": "benro",
+  "brand": "Benro",
+  "section": "Аналоги"
+ },
+ {
+  "question": "Какие бренды похожи на Lobinni и чем они отличаются?",
+  "chunk_id": "lobinni:alternatives:0",
+  "slug": "lobinni",
+  "brand": "Lobinni",
+  "section": "Аналоги"
+ },
+ {
+  "question": "Какие мониторы и ноутбуки конкурируют с линейкой asus proart?",
+  "chunk_id": "asus-proart:alternatives:0",
+  "slug": "asus-proart",
+  "brand": "Asus ProArt",
+  "section": "Аналоги"
+ },
+ {
+  "question": "Какие аккумуляторы стоят в велокомпьютерах xoss и сколько они держат заряд?",
+  "chunk_id": "xoss:faq:1",
+  "slug": "xoss",
+  "brand": "XOSS",
+  "section": "Вопросы и ответы"
+ },
+ {
+  "question": "Можно ли в соевой машине Joyoung делать овсяное молоко вместо соевого?",
+  "chunk_id": "joyoung:faq:1",
+  "slug": "joyoung",
+  "brand": "Joyoung",
+  "section": "Вопросы и ответы"
+ },
+ {
+  "question": "Айсбир — это вообще надёжная фирма или нет?",
+  "chunk_id": "icebear:faq:0",
+  "slug": "icebear",
+  "brand": "Icebear",
+  "section": "Вопросы и ответы"
+ },
+ {
+  "question": "Почему техника Aukey стоит дешевле других брендов?",
+  "chunk_id": "aukey:faq:1",
+  "slug": "aukey",
+  "brand": "Aukey",
+  "section": "Вопросы и ответы"
+ },
+ {
+  "question": "Ipason — это настоящий производитель или они просто перепродают чужие компьютеры?",
+  "chunk_id": "ipason:faq:0",
+  "slug": "ipason",
+  "brand": "Ipason",
+  "section": "Вопросы и ответы"
+ },
+ {
+  "question": "Можно ли пользоваться сигнализацией kerui без подключения к интернету?",
+  "chunk_id": "kerui:faq:0",
+  "slug": "kerui",
+  "brand": "Kerui",
+  "section": "Вопросы и ответы"
+ },
+ {
+  "question": "Какая программа от ASUS подходит для разгона их видеокарт?",
+  "chunk_id": "asus-game:faq:2",
+  "slug": "asus-game",
+  "brand": "ASUS Game",
+  "section": "Вопросы и ответы"
+ },
+ {
+  "question": "Enchen — это китайский бренд?",
+  "chunk_id": "enchen:faq:0",
+  "slug": "enchen",
+  "brand": "Enchen",
+  "section": "Вопросы и ответы"
+ },
+ {
+  "question": "Какие часы от Seestern делают похожими на известные модели?",
+  "chunk_id": "seestern:faq:0",
+  "slug": "seestern",
+  "brand": "Seestern",
+  "section": "Вопросы и ответы"
+ },
+ {
+  "question": "Где можно купить гитару Glarry?",
+  "chunk_id": "glarry:stores:0",
+  "slug": "glarry",
+  "brand": "Glarry",
+  "section": "Где купить"
+ },
+ {
+  "question": "где можно купить микрофон боя официально?",
+  "chunk_id": "boya:stores:0",
+  "slug": "boya",
+  "brand": "Boya",
+  "section": "Где купить"
+ },
+ {
+  "question": "Где можно купить товары Uleemark?",
+  "chunk_id": "uleemark:stores:0",
+  "slug": "uleemark",
+  "brand": "Uleemark",
+  "section": "Где купить"
+ },
+ {
+  "question": "Где можно купить продукцию Hollyland?",
+  "chunk_id": "hollyland:stores:0",
+  "slug": "hollyland",
+  "brand": "Hollyland",
+  "section": "Где купить"
+ },
+ {
+  "question": "Где можно купить магнитолу XTRONS?",
+  "chunk_id": "xtrons:stores:0",
+  "slug": "xtrons",
+  "brand": "XTRONS",
+  "section": "Где купить"
+ },
+ {
+  "question": "Где можно купить часы Lige, чтобы не нарваться на подделку?",
+  "chunk_id": "lige:stores:0",
+  "slug": "lige",
+  "brand": "Lige",
+  "section": "Где купить"
+ },
+ {
+  "question": "Где можно купить товары бренда Maden?",
+  "chunk_id": "maden:stores:0",
+  "slug": "maden",
+  "brand": "Maden",
+  "section": "Где купить"
+ },
+ {
+  "question": "Где можно купить ручки хонгдиан?",
+  "chunk_id": "hongdian:stores:0",
+  "slug": "hongdian",
+  "brand": "Hongdian",
+  "section": "Где купить"
+ },
+ {
+  "question": "Где можно купить товары Domyous?",
+  "chunk_id": "domyous:stores:0",
+  "slug": "domyous",
+  "brand": "Domyous",
+  "section": "Где купить"
+ },
+ {
+  "question": "Как бренду veger удалось стать популярным, хотя он малоизвестен?",
+  "chunk_id": "veger:interesting_fact:0",
+  "slug": "veger",
+  "brand": "Veger",
+  "section": "Интересный факт"
+ },
+ {
+  "question": "Почему у realme 12 камера сделана в виде часов?",
+  "chunk_id": "realme-12:interesting_fact:0",
+  "slug": "realme-12",
+  "brand": "realme 12",
+  "section": "Интересный факт"
+ },
+ {
+  "question": "Почему бренд Marco называется именно так, если это не связано с Италией?",
+  "chunk_id": "marco:interesting_fact:0",
+  "slug": "marco",
+  "brand": "Marco",
+  "section": "Интересный факт"
+ },
+ {
+  "question": "Что означает название бренда Desai?",
+  "chunk_id": "desai:interesting_fact:0",
+  "slug": "desai",
+  "brand": "Desai",
+  "section": "Интересный факт"
+ },
+ {
+  "question": "Почему hisenior популярен среди любителей наушников, если бренд малоизвестен?",
+  "chunk_id": "hisenior:interesting_fact:0",
+  "slug": "hisenior",
+  "brand": "Hisenior",
+  "section": "Интересный факт"
+ },
+ {
+  "question": "Что представляет собой бренд qzsd и для кого он подходит?",
+  "chunk_id": "qzsd:interesting_fact:0",
+  "slug": "qzsd",
+  "brand": "QZSD",
+  "section": "Интересный факт"
+ },
+ {
+  "question": "Откуда взялось название бренда audirect?",
+  "chunk_id": "audirect:interesting_fact:0",
+  "slug": "audirect",
+  "brand": "Audirect",
+  "section": "Интересный факт"
+ },
+ {
+  "question": "Почему у бренда ardi нет своих магазинов и кто делает его товары?",
+  "chunk_id": "ardi:interesting_fact:0",
+  "slug": "ardi",
+  "brand": "Ardi",
+  "section": "Интересный факт"
+ },
+ {
+  "question": "Почему sonoff так любят те, кто собирает умный дом своими руками?",
+  "chunk_id": "sonoff:interesting_fact:0",
+  "slug": "sonoff",
+  "brand": "Sonoff",
+  "section": "Интересный факт"
+ },
+ {
+  "question": "Что известно об истории бренда Paul Rubens и где он базируется?",
+  "chunk_id": "paul-rubens:history:0",
+  "slug": "paul-rubens",
+  "brand": "Paul Rubens",
+  "section": "История"
+ },
+ {
+  "question": "Почему infitary продаёт товары только через интернет, а не в обычных магазинах?",
+  "chunk_id": "infitary:history:1",
+  "slug": "infitary",
+  "brand": "Infitary",
+  "section": "История"
+ },
+ {
+  "question": "Как AYANEO продаёт свои портативные консоли и общается с покупателями?",
+  "chunk_id": "ayaneo:history:1",
+  "slug": "ayaneo",
+  "brand": "AYANEO",
+  "section": "История"
+ },
+ {
+  "question": "Что за бренд hotwav и какие смартфоны он выпускает?",
+  "chunk_id": "hotwav:history:0",
+  "slug": "hotwav",
+  "brand": "Hotwav",
+  "section": "История"
+ },
+ {
+  "question": "Что за бренд solove и чем он в основном занимается?",
+  "chunk_id": "solove:history:0",
+  "slug": "solove",
+  "brand": "Solove",
+  "section": "История"
+ },
+ {
+  "question": "Escam — это вообще надёжный бренд видеонаблюдения или нет?",
+  "chunk_id": "escam:history:1",
+  "slug": "escam",
+  "brand": "Escam",
+  "section": "История"
+ },
+ {
+  "question": "Что за бренд ножей twosun и где их делают?",
+  "chunk_id": "twosun:history:0",
+  "slug": "twosun",
+  "brand": "TwoSun",
+  "section": "История"
+ },
+ {
+  "question": "Почему Dreame считается популярным брендом, несмотря на недавнее появление на рынке?",
+  "chunk_id": "dreame:history:1",
+  "slug": "dreame",
+  "brand": "Dreame",
+  "section": "История"
+ },
+ {
+  "question": "Что за бренд zeuslap и чем он известен?",
+  "chunk_id": "zeuslap:history:0",
+  "slug": "zeuslap",
+  "brand": "Zeuslap",
+  "section": "История"
+ },
+ {
+  "question": "Как не нарваться на подделку при покупке инструментов Arrowmax?",
+  "chunk_id": "arrowmax:authenticity:0",
+  "slug": "arrowmax",
+  "brand": "Arrowmax",
+  "section": "Как отличить подделку"
+ },
+ {
+  "question": "Как не нарваться на подделку при покупке часов Essence?",
+  "chunk_id": "essence:authenticity:0",
+  "slug": "essence",
+  "brand": "Essence",
+  "section": "Как отличить подделку"
+ },
+ {
+  "question": "Как не нарваться на подделку при покупке Chenxi на AliExpress?",
+  "chunk_id": "chenxi:authenticity:0",
+  "slug": "chenxi",
+  "brand": "Chenxi",
+  "section": "Как отличить подделку"
+ },
+ {
+  "question": "Как не нарваться на подделку при покупке товаров Toocki?",
+  "chunk_id": "toocki:authenticity:0",
+  "slug": "toocki",
+  "brand": "Toocki",
+  "section": "Как отличить подделку"
+ },
+ {
+  "question": "Как не нарваться на подделку наушников AngelEars при покупке на маркетплейсе?",
+  "chunk_id": "angelears:authenticity:0",
+  "slug": "angelears",
+  "brand": "AngelEars",
+  "section": "Как отличить подделку"
+ },
+ {
+  "question": "Как не купить подделку часов пьер ланье?",
+  "chunk_id": "pierre-lannier:authenticity:0",
+  "slug": "pierre-lannier",
+  "brand": "Pierre Lannier",
+  "section": "Как отличить подделку"
+ },
+ {
+  "question": "Как не нарваться на подделку ontheedge при покупке на маркетплейсе?",
+  "chunk_id": "ontheedge:authenticity:0",
+  "slug": "ontheedge",
+  "brand": "Ontheedge",
+  "section": "Как отличить подделку"
+ },
+ {
+  "question": "Как понять, что наушники Superlux — подделка, а не оригинал?",
+  "chunk_id": "superlux:authenticity:0",
+  "slug": "superlux",
+  "brand": "Superlux",
+  "section": "Как отличить подделку"
+ },
+ {
+  "question": "Как не нарваться на подделку при покупке наушников Haida?",
+  "chunk_id": "haida:authenticity:0",
+  "slug": "haida",
+  "brand": "Haida",
+  "section": "Как отличить подделку"
+ },
+ {
+  "question": "За что покупатели хвалят и ругают часы Swatch?",
+  "chunk_id": "swatch:reviews:0",
+  "slug": "swatch",
+  "brand": "Swatch",
+  "section": "Отзывы"
+ },
+ {
+  "question": "Что пользователи говорят о продуктах и экопозиции бренда Kangawoo?",
+  "chunk_id": "kangawoo:reviews:0",
+  "slug": "kangawoo",
+  "brand": "Kangawoo",
+  "section": "Отзывы"
+ },
+ {
+  "question": "Что покупатели думают о технике Midea — стоит ли брать?",
+  "chunk_id": "midea:reviews:0",
+  "slug": "midea",
+  "brand": "Midea",
+  "section": "Отзывы"
+ },
+ {
+  "question": "Что владельцы говорят о часах Bovet и их обслуживании?",
+  "chunk_id": "bovet:reviews:0",
+  "slug": "bovet",
+  "brand": "Bovet",
+  "section": "Отзывы"
+ },
+ {
+  "question": "Что пишут в отзывах о телефонах Gigaset — надёжные ли они?",
+  "chunk_id": "gigaset:reviews:0",
+  "slug": "gigaset",
+  "brand": "Gigaset",
+  "section": "Отзывы"
+ },
+ {
+  "question": "Какие отзывы о Kandao Pro и программе Kandao Studio?",
+  "chunk_id": "kandao:reviews:1",
+  "slug": "kandao",
+  "brand": "Kandao",
+  "section": "Отзывы"
+ },
+ {
+  "question": "Что пишут покупатели о геймпадах 8BitDo?",
+  "chunk_id": "8bitdo:reviews:0",
+  "slug": "8bitdo",
+  "brand": "8BitDo",
+  "section": "Отзывы"
+ },
+ {
+  "question": "Что пишут владельцы наушников gold planar о их звуке и сборке?",
+  "chunk_id": "gold-planar:reviews:0",
+  "slug": "gold-planar",
+  "brand": "Gold Planar",
+  "section": "Отзывы"
+ },
+ {
+  "question": "Что пишут в отзывах о микроскопах Andonstar — стоит ли покупать?",
+  "chunk_id": "andonstar:reviews:0",
+  "slug": "andonstar",
+  "brand": "Andonstar",
+  "section": "Отзывы"
+ },
+ {
+  "question": "Какой смартфон iQOO самый мощный по процессору и экрану?",
+  "chunk_id": "iqoo:products:0",
+  "slug": "iqoo",
+  "brand": "iQOO",
+  "section": "Продукция"
+ },
+ {
+  "question": "Что умеет OBD2-адаптер Eunavi для диагностики машины?",
+  "chunk_id": "eunavi:products:1",
+  "slug": "eunavi",
+  "brand": "Eunavi",
+  "section": "Продукция"
+ },
+ {
+  "question": "Какие товары выпускает бренд Malcayang?",
+  "chunk_id": "malcayang:products:0",
+  "slug": "malcayang",
+  "brand": "Malcayang",
+  "section": "Продукция"
+ },
+ {
+  "question": "Какие увеличения у лупы Svbony SV17?",
+  "chunk_id": "svbony:products:1",
+  "slug": "svbony",
+  "brand": "Svbony",
+  "section": "Продукция"
+ },
+ {
+  "question": "Какие колёса elitewheels подойдут для гравийного велосипеда?",
+  "chunk_id": "elitewheels:products:0",
+  "slug": "elitewheels",
+  "brand": "Elitewheels",
+  "section": "Продукция"
+ },
+ {
+  "question": "Какой мини-ПК Hystou подойдёт для игр и работы с графикой?",
+  "chunk_id": "hystou:products:1",
+  "slug": "hystou",
+  "brand": "Hystou",
+  "section": "Продукция"
+ },
+ {
+  "question": "Для чего нужен OTG-адаптер Audirect с Type-C?",
+  "chunk_id": "audirect:products:1",
+  "slug": "audirect",
+  "brand": "Audirect",
+  "section": "Продукция"
+ },
+ {
+  "question": "Какие товары выпускает бренд Imagic?",
+  "chunk_id": "imagic:products:0",
+  "slug": "imagic",
+  "brand": "Imagic",
+  "section": "Продукция"
+ },
+ {
+  "question": "Какие товары для зарядки и аксессуары выпускает бренд Hoco?",
+  "chunk_id": "hoco:products:0",
+  "slug": "hoco",
+  "brand": "Hoco",
+  "section": "Продукция"
+ },
+ {
+  "question": "Какие технологии использует Hantek в своих измерительных приборах?",
+  "chunk_id": "hantek:technologies:0",
+  "slug": "hantek",
+  "brand": "Hantek",
+  "section": "Технологии"
+ },
+ {
+  "question": "Какие функции есть у смарт-часов Leepee?",
+  "chunk_id": "leepee:technologies:0",
+  "slug": "leepee",
+  "brand": "Leepee",
+  "section": "Технологии"
+ },
+ {
+  "question": "Какие беспроводные технологии и стики используются в геймпадах 8BitDo?",
+  "chunk_id": "8bitdo:technologies:0",
+  "slug": "8bitdo",
+  "brand": "8BitDo",
+  "section": "Технологии"
+ },
+ {
+  "question": "Какие механизмы стоят в часах Storm и как в них показывается время?",
+  "chunk_id": "storm:technologies:0",
+  "slug": "storm",
+  "brand": "Storm",
+  "section": "Технологии"
+ },
+ {
+  "question": "Какие технологии используются в принтерах Ender?",
+  "chunk_id": "ender:technologies:0",
+  "slug": "ender",
+  "brand": "Ender",
+  "section": "Технологии"
+ },
+ {
+  "question": "Какие технологии использует бренд Qiaodan в кроссовках и одежде?",
+  "chunk_id": "qiaodan:technologies:0",
+  "slug": "qiaodan",
+  "brand": "Qiaodan",
+  "section": "Технологии"
+ },
+ {
+  "question": "Какие технологии используются в устройствах Joyroom?",
+  "chunk_id": "joyroom:technologies:0",
+  "slug": "joyroom",
+  "brand": "Joyroom",
+  "section": "Технологии"
+ },
+ {
+  "question": "Какие технологии использует Dunu в своих наушниках?",
+  "chunk_id": "dunu:technologies:0",
+  "slug": "dunu",
+  "brand": "Dunu",
+  "section": "Технологии"
+ },
+ {
+  "question": "Какие модели Zeblaze поддерживают зарядку от солнца?",
+  "chunk_id": "zeblaze:technologies:0",
+  "slug": "zeblaze",
+  "brand": "Zeblaze",
+  "section": "Технологии"
+ }
+]
